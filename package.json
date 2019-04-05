@@ -1,0 +1,16 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "description": "Use the build in CI system in netlify to build and deploy this site",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && showdown makehtml -i README.md -o dist/index.html"
+  },
+  "repository": "git@github.com:treadup/netlify.git",
+  "author": "Henrik Treadup <henrik.treadup@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "showdown": "^1.9.0"
+  }
+}
